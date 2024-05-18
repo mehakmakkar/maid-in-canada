@@ -1,8 +1,8 @@
+'use client'
 import { useState } from 'react';
 import {Container, Title, Text, Image, Badge, Group, Card, Button, ActionIcon, Grid, List } from '@mantine/core';
 import { createStyles, Global } from '@mantine/emotion';
 import { IconSearch, IconLayoutGrid, IconPlus, IconEdit } from '@tabler/icons-react';
-import { css } from '@emotion/react';
 
 const useStyles = createStyles((theme) => ({
     listItem: {
@@ -75,34 +75,5 @@ export default function ListingsPage() {
             )}
         </List>
     </Container>
-    // <Container size="md" style={{justify:"center"}}>
-    //   <header className={classes.header}>
-    //     <Title order={2}>Your listings</Title>
-    //     <Group className={classes.iconButtons}>
-    //       <ActionIcon size="lg">
-    //         <IconSearch size={20} />
-    //       </ActionIcon>
-    //       <ActionIcon size="lg">
-    //         <IconLayoutGrid size={20} />
-    //       </ActionIcon>
-    //       <ActionIcon size="lg">
-    //         <IconPlus size={20} />
-    //       </ActionIcon>
-    //     </Group>
-    //   </header>
-    //   <Grid>
-    //     {listings.map((listing) => (
-    //       <Grid.Col key={listing.id} span={{base: 8}} style={{justify: "center", align: "center"}}>
-    //         <Card shadow="sm" padding="lg" className={classes.card}>
-    //           <Card.Section>
-    //             <Image src={listing.image} height={160} className={classes.image} alt={listing.title} />
-    //           </Card.Section>
-    //           <Text  mt="md">{listing.title}</Text>
-    //           <Text size="sm" color="dimmed">{listing.location}</Text>
-    //         </Card>
-    //       </Grid.Col>
-    //     ))}
-    //   </Grid>
-    // </Container>
   );
 }

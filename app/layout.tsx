@@ -1,12 +1,10 @@
+'use client'
 import '@mantine/core/styles.css';
 import React from 'react';
 import { MantineProvider, ColorSchemeScript } from '@mantine/core';
 import { theme } from '../theme';
-
-export const metadata = {
-  title: 'Mantine Next.js template',
-  description: 'I am using Mantine with Next.js!',
-};
+import { MantineEmotionProvider } from '@mantine/emotion';
+import MicAppShell from './components/MicAppShell';
 
 export default function RootLayout({ children }: { children: any }) {
   return (
@@ -20,7 +18,11 @@ export default function RootLayout({ children }: { children: any }) {
         />
       </head>
       <body>
-        <MantineProvider theme={theme}>{children}</MantineProvider>
+        <MantineProvider theme={theme}>
+          <MantineEmotionProvider>
+          <MicAppShell>{children}</MicAppShell>
+          </MantineEmotionProvider>
+        </MantineProvider>
       </body>
     </html>
   );
