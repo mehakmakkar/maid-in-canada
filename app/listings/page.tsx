@@ -3,6 +3,7 @@ import { useState } from 'react';
 import {Container, Title, Text, Image, Badge, Group, Card, Button, ActionIcon, Grid, List } from '@mantine/core';
 import { createStyles, Global } from '@mantine/emotion';
 import { IconSearch, IconLayoutGrid, IconPlus, IconEdit } from '@tabler/icons-react';
+import Link from 'next/link';
 
 const useStyles = createStyles((theme) => ({
     listItem: {
@@ -67,9 +68,11 @@ export default function ListingsPage() {
                             </ActionIcon>
                         </Group>
 
-                        <Button color="blue" fullWidth mt="md" radius="md">
-                            Book Cleaning
-                        </Button>
+                        <Link href="/cleaning-requests/new" style={{textDecoration: 'none'}}>
+                            <Button color="blue" fullWidth mt="md" radius="md">
+                                Book Cleaning
+                            </Button>
+                        </Link>
                         </Card>
                 </List.Item>
             )}
