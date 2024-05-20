@@ -1,6 +1,6 @@
-# Hackathon Presentation
+# Main in Canada
 
-<iframe src="https://onedrive.live.com/embed?resid=EE30C856EA16E708%211519&amp;authkey=!ALgDoKgL2w2RzOY&amp;em=2&amp;wdAr=1.7777777777777777" width="1190px" height="720px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+![Maid in Canada Presentation (Animated slides)](./Maid in Canada (Hackathon).gif)
 
 # Mantine Next.js template
 
