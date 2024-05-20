@@ -1,6 +1,7 @@
 'use client'
 
-import { Button, Center, Container, Divider, Grid, Input, List, Paper, Radio, RingProgress, Stack, Text, Title } from "@mantine/core";
+import { Carousel } from "@mantine/carousel";
+import { Button, Center, Container, Divider, Grid, Image, Input, List, Paper, Radio, RingProgress, Stack, Text, Title } from "@mantine/core";
 import Link from "next/link";
 import React from "react";
 
@@ -13,7 +14,21 @@ export default function JobRequestPage() {
                 </Center>
             </Grid.Col>
 
-
+            <Grid.Col span={2}></Grid.Col>
+            <Grid.Col span={8}>
+                <Carousel withIndicators height={400} loop={true}>
+                    <Carousel.Slide>
+                        <Image radius="md" src="/images/room1.webp" height='100%'/>
+                    </Carousel.Slide>
+                    <Carousel.Slide>
+                        <Image radius="md" src="/images/living-room.webp" height='100%' />
+                    </Carousel.Slide>
+                    <Carousel.Slide>
+                        <Image radius="md" src="/images/main-bathroom.webp" height='100%' />
+                    </Carousel.Slide>
+                </Carousel>
+            </Grid.Col>
+            <Grid.Col span={2}></Grid.Col>
             <Grid.Col span={6}>
                 <Text>Distance</Text>
             </Grid.Col>
